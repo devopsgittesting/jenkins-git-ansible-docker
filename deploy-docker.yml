@@ -23,6 +23,6 @@
       community.docker.docker_container:
         name: mavenproject
         image: "devopstest777/mavenproject:{{DOCKER_TAG}}"
-        state: present
+        state: started
         ports:
           - "8080:8080"
