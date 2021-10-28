@@ -19,8 +19,8 @@
       pip:
         name: docker-py
         state: present
-    - name: Start the container
-      community.docker.docker_container:
+   
+    - community.docker.docker_container:
         name: mavenproject
         image: "devopstest777/mavenproject:{{DOCKER_TAG}}"
         state: started
