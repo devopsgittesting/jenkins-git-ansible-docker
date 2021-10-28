@@ -15,6 +15,10 @@
         name: docker
         state: started
         enabled: yes
+    - name: Install docker-py python module
+      pip:
+        name: docker-py
+        state: presen
     - name: starting docker container
       community.docker.docker_container:
         name: mavenproject
