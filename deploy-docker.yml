@@ -20,7 +20,7 @@
         name: docker-py
         state: present
     - name: starting docker container
-      ansible.collections.docker_container:
+      docker_container:
         name: mavenproject
         image: "devopstest777/mavenproject:{{DOCKER_TAG}}"
         state: started
